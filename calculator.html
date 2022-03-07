@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Kalkulator Ku</title>
+        <link rel="stylesheet" href="styling.css">
+    </head>
+
+    <body bgcolor="#ebedb2">
+        
+    <div id="tes">
+        <center>
+            <h2>Kalkulator</h2>
+        <form id="formulir">
+            Angka 1: <input type="text" name="a1"  onfocus="angka1()" /><br />
+            Angka 2: <input type="text" name="a2"  onfocus="angka2()" /><br />
+            Hasil: <input type="text" disabled name="hasil"/>
+        </form>
+        
+        <br />
+
+        <input type="button" name="pertambahan" value="+" onclick="tambah()" />
+        <input type="button" name="pengurangan" value="-" onclick="kurang()"/>
+        <input type="button" name="perkalian" value="x" onclick="kali()"/>
+        <input type="button" name="pembagian" value="/" onclick="bagi()"/>
+        <input type="button" name="perpangkatan" value="^" onclick="pangkat()"/>
+        <input type="button" id="cancel" name="batal" value="Batal" onclick="kosong()"/>
+    </center>
+    </div>
+    </body>
+    <script language="javascript" src="calc.js"></script>
+
+</html>

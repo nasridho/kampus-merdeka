@@ -1,0 +1,57 @@
+input[type="text"], input[type="number"]{
+    padding:2px 9px; 
+    line-height: 45px;
+    font-size: 17px;
+    border-radius: 5px;
+    font-family: Helvetica;
+    border: 1px solid #cdd0d4;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+select{
+    width: 32%;
+    height: 50px;
+    font-size: 17px;
+    padding:2px 9px; 
+    border-radius: 5px;
+    background-color: #f5f6f7;
+    font-family: Helvetica;
+    border: 1px solid #cdd0d4;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color: #49a22e;
+    color: white;
+    border-radius:5px;
+    padding:20px;
+    border: none;
+    line-height: 10px;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+#cancel {
+    background-color: #b11c1c;
+    color: white;
+    border-radius:5px;
+    padding:20px;
+    border: none;
+    line-height: 10px;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+
+#tes {
+    position: fixed;
+    border-radius: 10px;
+    top: 50%;
+    width: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+}
