@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informasi Gempa</title>
+</head>
+<body>
+
+<h1>Informasi Gempa</h1>
+<br />
+<b>[10 kejadian gempa terkini]</b><hr />
+<script>
+class Gempa {
+    constructor(lokasi, skala) {
+      this.lokasi = lokasi;
+      this.skala = skala;
+    }
+
+    dampak(){
+        let dampaknya
+
+        if (this.skala >= 0 && this.skala <= 2) dampaknya = "tidak terasa";
+        else if (this.skala > 2 && this.skala <= 4) dampaknya = "bangunan retak-retak";
+        else if (this.skala > 4 && this.skala <= 6) dampaknya = "bangunan roboh";
+        else if (this.skala > 6)  dampaknya = "bangunan roboh & berpotensi tsunami";
+        else dampaknya = "tak ada gempa";
+
+        document.write(`<b>Lokasi gempa: </b>${this.lokasi} </br />
+        <b>Skala: </b>${this.skala}</br />
+        <b>Dampak: </b>${dampaknya}<hr />`)
+    }
+
+}
+
+
+let Argentina = new Gempa('Argentina', 4);
+let Italia = new Gempa('Italia', 1);
+let Meksiko = new Gempa('Meksiko', 2);
+let USA = new Gempa('USA', 8);
+let Perancis = new Gempa('Perancis', 5);
+let Jepang = new Gempa('Jepang', 3);
+let Russia = new Gempa('Russia', 4);
+let Kanada = new Gempa('Kanada', 2);
+let India = new Gempa('India', 9);
+let Polandia = new Gempa('Polandia', 3);
+
+Argentina.dampak()
+Italia.dampak()
+Meksiko.dampak()
+USA.dampak()
+Perancis.dampak()
+Jepang.dampak()
+Russia.dampak()
+Kanada.dampak()
+India.dampak()
+Polandia.dampak()
+
+</script>
+</body>
+</html>
