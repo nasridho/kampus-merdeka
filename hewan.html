@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Zoo</title>
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function () {
+                $("div.kuda").click(function () {
+                    $(this).css({
+                        background: "url('img/horse.gif')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/kuda.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+
+                $("div.kambing").click(function () {
+                    $(this).css({
+                        background: "url('img/kambing.png')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/kambing.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+
+                $("div.sapi").click(function () {
+                    $(this).css({
+                        background: "url('img/sapi.png')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/sapi.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+
+                $("div.ayam").click(function () {
+                    $(this).css({
+                        background: "url('img/ayam.png')"
+                    });
+                    $("<audio></audio>").attr({ 
+		            'src':'suara/ayam.mp3', 
+		            'volume':0.4,
+		            'autoplay':'autoplay'
+	                }).appendTo("body");
+                });
+            });
+        </script>
+        <style type="text/css">
+            body {
+                text-align: center;
+                background: #96bd49;
+            }
+            #kotak {
+                background: url("img/pintu.png");
+                width: 200px;
+                height: 200px;
+                cursor: pointer;
+                border-bottom: 1px solid black;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            #utama {
+                margin: 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+                display:inline-block;
+                width: 200px;
+                justify-content: center;
+                text-align: center;
+                background: #a56b38;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Kebun Binatang</h2>
+        <div id="utama"><div id="kotak" class="kuda"></div>Kuda</div>
+        <div id="utama"><div id="kotak" class="kambing"></div>Kambing</div>
+        <div id="utama"><div id="kotak" class="ayam"></div>Ayam</div>
+        <div id="utama"><div id="kotak" class="sapi"></div>Sapi</div>
+    </body>
+
+</html>
+
